@@ -2,6 +2,7 @@ import React from "react";
 import "./scss/app.scss";
 import Header from "./Components/Header";
 import Search from "./Components/Search";
+import Menu from "./Components/Menu";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <main>
           <Search />
+          <Menu />
         </main>
       </div>
     </div>
