@@ -1,0 +1,72 @@
+.top-navigation {
+    background-color: #000;
+  }
+  
+  .header-content {
+    height: 38px;
+    justify-content: space-between;
+    align-items: center;
+  
+    .navigation__list {
+    
+      li:not(:last-child) {
+        margin-right: 30px;
+      }
+      
+      a {
+        font-size: 14px;
+        color: $white;
+        transition: 0.3s ease-in;
+      }
+  
+      a:hover {
+        color: $hover-header;
+        transition: 0.3s ease-in;
+      }
+    }
+  
+    .content__contact {
+  
+      &--tel, &--delivery {
+        font-size: 14px;
+        color: $white;
+        transition: 0.3s ease-in;
+      }
+  
+      &--tel {
+        margin-right: 30px;
+  
+        svg {
+          margin-right: 11px;
+        }
+      }
+  
+      &--delivery {
+        svg {
+          margin-right: 10px;
+        }
+      }
+  
+      &--tel:hover, &--delivery:hover {
+        color: $hover-header;
+      }
+  
+      &--tel:hover {
+        svg path {
+          stroke: $hover-header;
+          transition: 0.3s ease-in;
+        }
+      }
+  
+      &--delivery:hover {
+        svg {
+          path {
+            fill: $hover-header;
+            transition: 0.3s ease-in;
+          }
+          
+        }
+      }
+    }
+  
+  }
