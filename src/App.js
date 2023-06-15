@@ -3,6 +3,7 @@ import "./scss/app.scss";
 import Header from "./Components/Header";
 import Search from "./Components/Search";
 import Menu from "./Components/Menu";
+import Carousel from "./Components/Carousel";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <main>
           <Search />
           <Menu />
+          <Carousel />
         </main>
       </div>
     </div>

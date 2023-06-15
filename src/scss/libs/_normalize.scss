@@ -3,7 +3,7 @@
   margin: 0;
   list-style: none;
   outline: none;
-  font-family: 'Nunito', Roboto, system-ui, Tahoma, sans-serif;
+  font-family: Roboto, system-ui, Tahoma, sans-serif;
   box-sizing: border-box;
 }
 
@@ -27,7 +27,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: $black;
+   font-family: "Roboto";
 }
 
 h1 {
