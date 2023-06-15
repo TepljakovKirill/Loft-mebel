@@ -3,7 +3,7 @@ import React from "react";
 function Menu() {
   return (
     <div className="container">
-      <div className="menu flex">
+      <nav className="menu flex">
         <ul className="menu__list flex">
           <li>
             <a href="#">
@@ -200,7 +200,7 @@ function Menu() {
             </button>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
   );
 }

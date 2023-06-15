@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Search from "./Components/Search";
 import Menu from "./Components/Menu";
 import Carousel from "./Components/Carousel";
+import Bestsellers from "./Components/Bestsellers";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Search />
           <Menu />
           <Carousel />
+          <Bestsellers />
         </main>
       </div>
     </div>
