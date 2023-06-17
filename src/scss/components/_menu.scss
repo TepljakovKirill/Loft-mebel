@@ -23,6 +23,7 @@
                 svg {
                     margin-right: 9px;
                 }
+               
             }
 
             button {
@@ -56,6 +57,11 @@
                     transition: 0.3s ease-in;
                 }
             }
+        }
+
+        .red {
+            color: $red-link;
+            transition: 0.3s ease-in;
         }
     }
 

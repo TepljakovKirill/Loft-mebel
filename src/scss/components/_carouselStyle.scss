@@ -14,10 +14,12 @@
 }
 
 .slick-next:before {
+    font-size: 0;
     content: url(../../img/arrow-right.png);
 }
 
 .slick-prev:before {
+    font-size: 0;
     content: url(../../img/arrow-left.png);
 }
 

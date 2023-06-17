@@ -179,7 +179,9 @@ function Menu() {
             </a>
           </li>
           <li>
-            <a href="#">Акция</a>
+            <a className="red" href="#">
+              Акция
+            </a>
           </li>
           <li>
             <button>
