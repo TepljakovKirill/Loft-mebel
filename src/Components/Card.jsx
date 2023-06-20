@@ -1,5 +1,6 @@
 import React from "react";
 
+import discount from "../img/discount.png";
 import parameter from "../img/parameter.png";
 
 function Card({
@@ -11,6 +12,8 @@ function Card({
   sizeDepth,
   sizeHeight,
   price,
+  oldPrice,
+  discountPrice,
 }) {
   const [isFavorite, setIsFavorite] = React.useState(false);
 
@@ -23,7 +26,26 @@ function Card({
       <div className="card__description">
         <p className="title">{title}</p>
         <p className="descr">{descr}</p>
-        <p className="price">{price}₽</p>
+        <div className="price-block flex">
+          <p className="price">
+            {price
+              .toString()
+              .split(/(?=(?:\d{3})+(?:\.|$))/g)
+              .join(" ")}
+            ₽
+          </p>
+          {oldPrice ? (
+            <p className="old-price">
+              {oldPrice
+                .toString()
+                .split(/(?=(?:\d{3})+(?:\.|$))/g)
+                .join(" ")}
+              ₽
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
       <div className="card__size">
         <p className="size-title">Размеры</p>
@@ -57,6 +79,14 @@ function Card({
           stroke={isFavorite ? "none" : "black"}
         />
       </svg>
+      {discountPrice ? (
+        <div className="discount-block flex">
+          <img src={discount} alt="Скидка" />
+          <p className="discount">{discountPrice}%</p>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
