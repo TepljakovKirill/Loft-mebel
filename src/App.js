@@ -4,7 +4,7 @@ import Header from "./Components/Header";
 import Search from "./Components/Search";
 import Menu from "./Components/Menu";
 import Carousel from "./Components/Carousel";
-import Bestsellers from "./Components/Bestsellers";
+import Bestsellers from "./Components/Bestsellers/Bestsellers";
 import Footer from "./Components/Footer";
 
 function App() {
