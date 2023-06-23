@@ -1,10 +1,16 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+
 import "./scss/app.scss";
+
 import Header from "./Components/Header";
 import Search from "./Components/Search";
 import Menu from "./Components/Menu";
-import Carousel from "./Components/Carousel";
-import Bestsellers from "./Components/Bestsellers/Bestsellers";
+
+import Home from "./pages/Home";
+import Contacts from "./pages/Contacts";
+import NotFound from "./pages/NotFound";
+
 import Footer from "./Components/Footer";
 
 function App() {
@@ -15,8 +21,11 @@ function App() {
         <main>
           <Search />
           <Menu />
-          <Carousel />
-          <Bestsellers />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </main>
         <Footer />
       </div>
