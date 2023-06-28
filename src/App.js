@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import "./scss/app.scss";
 
 import Header from "./Components/Header";
+import ModalMenu from "./Components/ModalMenu";
 import Search from "./Components/Search";
 import Menu from "./Components/Menu";
 
@@ -14,13 +15,19 @@ import NotFound from "./pages/NotFound";
 import Footer from "./Components/Footer";
 
 function App() {
+  const [menuOpened, setMenuOpened] = React.useState(false);
   return (
     <div className="App">
       <div className="wrapper">
+        {menuOpened ? (
+          <ModalMenu onClickMenu={() => setMenuOpened(false)} />
+        ) : (
+          ""
+        )}
         <Header />
         <main>
           <Search />
-          <Menu />
+          <Menu onClickMenu={() => setMenuOpened(true)} />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contacts" element={<Contacts />} />

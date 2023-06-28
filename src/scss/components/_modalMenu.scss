@@ -1,0 +1,106 @@
+.modal {
+    width: 277px;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #F9F9F9;
+    z-index: 10;
+    
+    &__title {
+        margin-left: 29px;
+        font-size: 13px;
+        font-weight: 500;
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    &__block {
+        margin-top: 25px;
+
+        .menu-item {
+            transition: 0.3s ease-in;
+            
+            svg {
+                width: 14px;
+                height: 14px;
+                margin-right: 20px;
+            }
+
+            a {
+                width: 100%;
+                padding: 15px 0 15px 29px;
+                display: flex;
+                font-size: 13px;
+                color: #686868;
+
+                &:hover {
+                    color: $text-color;
+                    transition: 0.3s ease-in;
+                }
+            }
+
+            &:hover svg {
+                
+                path {
+                    fill: $text-color;
+                    transition: 0.3s ease-in;
+                }
+                
+            }
+
+            .discount {
+                color: #e92d2d;
+
+                &:hover {
+                   color: #f50707;
+                   transition: 0.3s ease-in;
+                    
+                }
+
+                &:hover svg {
+                    path {
+                        fill: none;
+                        stroke: #f50707;
+                        transition: 0.3s ease-in;
+                    }
+                    
+                }
+            }
+
+            .new:hover svg {
+                path {
+                    fill: #f8c429;
+                    transition: 0.3s ease-in;
+                }
+            }
+
+        }
+
+        .menu-item:hover {
+            background: linear-gradient(90deg, #F1F1F1 0%, rgba(238, 246, 250, 0.19) 77.22%, rgba(237, 248, 252, 0.00) 100%);
+            transition: 0.3s ease-in;
+        }
+    }
+
+    .modalExit {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease-in;
+
+        &:hover svg {
+            path {
+                fill: #8d8989;
+                stroke: #8d8989;
+                transition: 0.3s ease-in;
+            }
+        }
+
+    }
+}

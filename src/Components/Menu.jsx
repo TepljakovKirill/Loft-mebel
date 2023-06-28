@@ -1,6 +1,6 @@
 import React from "react";
 
-function Menu() {
+function Menu({ onClickMenu }) {
   return (
     <div className="container">
       <nav className="menu flex">
@@ -184,7 +184,7 @@ function Menu() {
             </a>
           </li>
           <li>
-            <button>
+            <button onClick={onClickMenu}>
               <svg width="3" height="16" viewBox="0 0 3 16" fill="none">
                 <path
                   d="M1.63636 2.27273C1.28491 2.27273 1 1.98782 1 1.63636C1 1.28491 1.28491 1 1.63636 1C1.98782 1 2.27273 1.28491 2.27273 1.63636C2.27273 1.98782 1.98782 2.27273 1.63636 2.27273Z"
