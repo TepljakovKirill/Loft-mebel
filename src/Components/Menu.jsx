@@ -144,7 +144,7 @@ function Menu({ onClickMenu }) {
                   fill="black"
                 />
               </svg>
-              Офисная мебель
+              <p className="officeMebel">Офисная мебель</p>
             </a>
           </li>
           <li>

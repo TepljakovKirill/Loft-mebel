@@ -1,3 +1,9 @@
+.header {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
 .top-navigation {
     background-color: #000;
   }

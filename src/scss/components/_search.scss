@@ -4,11 +4,37 @@
     justify-content: space-between;
     align-items: center;
 
+    .logoBlock {
+        align-items: center;
+
+        button {
+            margin-right: 25px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            display: none;
+    
+            @media (max-width: 768px) {
+               display: block;
+              }
+        }
+    }
+
+   
+
     form {
         width: 839px;
         height: 50px;
+        margin: 0 35px;
         border: 1px solid #E6E6E6;
         align-items: center;
+
+        @media (max-width: 768px) {
+            width: 243px;
+            height: 40px;
+            border: none;
+            background: #F9F9F9;
+          }
 
         button {
            width: 6%;
@@ -16,6 +42,10 @@
            background-color: transparent;
            border: none;
            cursor: pointer;
+
+           @media (max-width: 768px) {
+            width: 20%;
+          }
         }
 
         input::placeholder {
@@ -27,6 +57,29 @@
             height: 100%;
             font-size: 14px;
             border: none;
+
+            @media (max-width: 768px) {
+                background: #F9F9F9;
+              }
+        }
+    }
+
+    &__delyvery {
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block;
+          }
+    }
+
+    &__contact--delivery {
+        margin-right: 30px;
+        align-items: center;
+        font-size: 12px;
+        color: $text-color;
+
+        svg {
+            margin-right: 10px;
         }
     }
 
@@ -36,7 +89,7 @@
         }
         
         svg:not(:last-child) {
-            margin-right: 33px;
+            margin-right: 2.8vmax;
         }
     }
 }

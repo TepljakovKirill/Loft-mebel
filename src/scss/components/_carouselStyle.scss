@@ -2,15 +2,23 @@
     width: 30px;
     height: 30px;
     background: #fff;
-    z-index: 10;
+    z-index: 5;
 }
 
 .slick-next {
     right: 25px;
+
+    @media (max-width: 768px) {
+        right: 5%;
+    }
 }
 
 .slick-prev {
     left: 25px;
+
+    @media (max-width: 768px) {
+        left: 86%;
+    }
 }
 
 .slick-next:before {
@@ -43,3 +51,10 @@
     background-color: #D2D2D2;
     content: url(../../img/arrow-left-hover.png);
 }
+
+@media (max-width: 768px) {
+    .slick-prev, .slick-next {
+        top: 85%;
+    }
+
+  }

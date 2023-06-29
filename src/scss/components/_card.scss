@@ -5,6 +5,10 @@
     height: 510px;
     padding: 20px;
     transition: 0.3s ease-in;
+
+    @media (max-width: 768px) {
+        width: 220px;
+      }
     
 
     &__img {
