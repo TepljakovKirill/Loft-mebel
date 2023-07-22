@@ -7,7 +7,12 @@ const Home = () => {
   return (
     <div className="wrapper">
       <Carousel />
-      <Bestsellers />
+      <div className="container">
+        <div className="bestsellers">
+          <p className="bestsellers__title">Хиты продаж</p>
+          <Bestsellers />
+        </div>
+      </div>
     </div>
   );
 };

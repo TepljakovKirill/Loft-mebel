@@ -31,20 +31,23 @@
                 font-weight: 400;
             }
     
-            button {
+            a {
                 width: 163px;
                 height: 45px;
+                justify-content: center;
+                align-items: center;
+                color: $text-color;
                 background: #FFFFFF;
                 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
                 font-family: "Roboto-Condensed-Regular";
                 font-size: 12px;
+                font-weight: 700;
                 text-transform: uppercase;
                 border: none;
-                cursor: pointer;
                 transition: 0.3s ease-in;
             }
 
-            button:hover {
+            a:hover {
                 background: #D2D2D2;
                 color: $white;
                 transition: 0.3s ease-in;

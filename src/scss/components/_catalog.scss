@@ -1,0 +1,83 @@
+.container__wrap {
+    justify-content: space-between;
+    
+
+
+    .filter {
+        width: 263px;
+        padding: 20px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.07);
+
+        &__title {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        &__popUp {
+            
+        }
+
+        .popup__list {
+            width: 100%;
+            flex-direction: column;
+            overflow: hidden;
+            
+
+            &--wrap {
+                display: flex;
+                padding: 0 10px;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 3px;
+                background-color: $popupFilter;
+                z-index: 1;
+                
+                img {
+                    padding: 7px 0 7px 7px;
+                    cursor: pointer;
+                    transition: 0.1s ease-in;
+                }
+
+                .transImg {
+                    padding: 7px 7px 7px 0px;
+                    transform: rotate(180deg);
+                    transition: 0.1s ease-in;
+                }
+            }
+           
+            p {
+                height: 29px;
+                font-size: 12px;
+                align-items: center;
+            }
+
+            ul {
+                transform: translateY(-200px);
+                transition: 0.3s ease-in;
+                
+               
+                li {
+                    padding: 0 10px;
+                    height: 29px;
+                    font-size: 12px;
+                    align-items: center;
+                    border-radius: 3px;
+                    transition: 0.3s ease-in;
+                }
+
+                li:hover {
+                    border-radius: 3px;
+                    background-color: $popupFilter;
+                    cursor: pointer;
+                    transition: 0.3s ease-in;
+                }
+            }
+
+            .open {
+                transform: translateY(0);
+                transition: 0.3s ease-in;
+            }
+           
+        }
+    }
+}

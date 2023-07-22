@@ -10,6 +10,7 @@ import Menu from "./Components/Menu";
 
 import Home from "./pages/Home";
 import Contacts from "./pages/Contacts";
+import Catalog from "./pages/Catalog";
 import NotFound from "./pages/NotFound";
 
 import Footer from "./Components/Footer";
@@ -31,6 +32,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contacts" element={<Contacts />} />
+            <Route path="/catalog" element={<Catalog />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

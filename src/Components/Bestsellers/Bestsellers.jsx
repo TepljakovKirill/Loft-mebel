@@ -18,11 +18,10 @@ function Bestsellers() {
   }, []);
 
   return (
-    <div className="container">
-      <div className="bestsellers">
-        <p className="bestsellers__title">Хиты продаж</p>
-        <div className="card-block flex">
-          {/* {items.map((obj) => (
+    <div className="card-block flex">
+      {isLoading
+        ? [...new Array(24)].map((_, index) => <Skeleton key={index} />)
+        : items.map((obj) => (
             <Card
               key={obj.id}
               imgUrl={obj.imgUrl}
@@ -35,25 +34,7 @@ function Bestsellers() {
               oldPrice={obj.oldPrice}
               discountPrice={obj.discountPrice}
             />
-          ))} */}
-          {isLoading
-            ? [...new Array(24)].map((_, index) => <Skeleton key={index} />)
-            : items.map((obj) => (
-                <Card
-                  key={obj.id}
-                  imgUrl={obj.imgUrl}
-                  title={obj.title}
-                  descr={obj.descr}
-                  sizeWidth={obj.sizeWidth}
-                  sizeDepth={obj.sizeDepth}
-                  sizeHeight={obj.sizeHeight}
-                  price={obj.price}
-                  oldPrice={obj.oldPrice}
-                  discountPrice={obj.discountPrice}
-                />
-              ))}
-        </div>
-      </div>
+          ))}
     </div>
   );
 }

@@ -12,6 +12,12 @@
         @media (max-width: 1150px) {
             overflow: scroll;
           }
+
+        @media (max-width: 960px) {
+            li:nth-child(7) {
+                display: none;
+            }
+        }
        
         li {
             display: flex;
@@ -26,8 +32,10 @@
                 font-size: 16px;
                 color: $text-color;
 
-                @media (max-width: 768px) {
+                @media (max-width: 960px) {
+                    padding: 0 16px;
                     font-size: 14px;
+
                   }
 
                 svg {

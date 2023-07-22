@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,7 +29,9 @@ function Carousel() {
                 <br /> мебель
               </h1>
               <p>Современная и удобная мебель в Анапе</p>
-              <button>смотреть каталог</button>
+              <Link to="/catalog" className="flex">
+                смотреть каталог
+              </Link>
             </div>
           </div>
           <div className="carousel__card">
