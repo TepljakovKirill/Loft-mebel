@@ -10,7 +10,7 @@ import Menu from "./Components/Menu";
 
 import Home from "./pages/Home";
 import Contacts from "./pages/Contacts";
-import Catalog from "./pages/Catalog";
+import Catalog from "./pages/Catalog/Catalog";
 import NotFound from "./pages/NotFound";
 
 import Footer from "./Components/Footer";
