@@ -1,4 +1,6 @@
+
 .popup__list {
+    margin-bottom: 10px;
     width: 100%;
     flex-direction: column;
     
@@ -57,8 +59,7 @@
     }
 
     .open {
-        
-        height: 165px;
+        height: auto;
         transition: 0.3s ease-in;
     }
    

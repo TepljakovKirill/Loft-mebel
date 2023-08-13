@@ -1,22 +1,13 @@
 import React from "react";
 import arrow from "../../img/openfilter.png";
-import ListMebel from "./ListMebel";
 
-function LivingRooms() {
+function MebelLink(counter) {
   const [open, setOpen] = React.useState(false);
   const [itemMenu, setItemMenu] = React.useState(0);
-  const menu = [
-    "Гостинные",
-    "Спальни",
-    "Кухни",
-    "Прихожие",
-    "Офисная мебель",
-    "Детская",
-  ];
 
-  const listMebel = ["Мягкая мебель", "Шкафы", "Столы"];
+  // const linkMebel = [cushionedFurniture, closet, table];
 
-  // const cushionedFurniture = ["Диваны", "Детские диваны", "Двуспальные диваны"];
+  const cushionedFurniture = ["Диваны", "Детские диваны", "Двуспальные диваны"];
   // const closet = ["Комод", "Шкаф", "Буфет"];
   // const table = ["Письменный стол", "Журнальный стол", "Стол школьника "];
 
@@ -29,7 +20,7 @@ function LivingRooms() {
     <div className="filter__popUp">
       <div className="popup__list flex">
         <div onClick={() => setOpen(!open)} className="popup__list--wrap">
-          <p className="flex">{menu[itemMenu]}</p>
+          <p className="flex">{cushionedFurniture[counter]}</p>
           <img
             src={arrow}
             className={open ? "transImg" : ""}
@@ -38,8 +29,8 @@ function LivingRooms() {
         </div>
 
         <ul className={open ? "open" : ""}>
-          {menu.map((item, i) =>
-            menu[itemMenu] === item ? (
+          {cushionedFurniture.map((item, i) =>
+            cushionedFurniture[itemMenu] === item ? (
               ""
             ) : (
               <li className="flex" key={i} onClick={() => onClickItemMenu(i)}>
@@ -49,9 +40,8 @@ function LivingRooms() {
           )}
         </ul>
       </div>
-      <ListMebel />
     </div>
   );
 }
 
-export default LivingRooms;
+export default MebelLink;
