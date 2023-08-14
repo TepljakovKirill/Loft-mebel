@@ -10,7 +10,6 @@ function SubmenuMebel() {
   const onClickItemMenu = (i) => {
     setItemMenu(i);
     setOpen(false);
-    console.log(i);
   };
 
   return (
@@ -37,7 +36,7 @@ function SubmenuMebel() {
           )}
         </ul>
       </div>
-      <MebelLink counter="listMebel[1]" />
+      <MebelLink counter={itemMenu} />
     </div>
   );
 }

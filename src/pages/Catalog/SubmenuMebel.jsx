@@ -1,15 +1,20 @@
 import React from "react";
 import arrow from "../../img/openfilter.png";
 
-function MebelLink(counter) {
+function MebelLink(props) {
   const [open, setOpen] = React.useState(false);
   const [itemMenu, setItemMenu] = React.useState(0);
 
-  // const linkMebel = [cushionedFurniture, closet, table];
+  const allMebel = ["cushionedFurniture", "closet", "table"];
 
-  const cushionedFurniture = ["Диваны", "Детские диваны", "Двуспальные диваны"];
-  // const closet = ["Комод", "Шкаф", "Буфет"];
-  // const table = ["Письменный стол", "Журнальный стол", "Стол школьника "];
+  const mebelObj = {
+    cushionedFurniture: ["Диваны", "Детские диваны", "Двуспальные диваны"],
+    closet: ["Комод", "Шкаф", "Буфет"],
+    table: ["Письменный стол", "Журнальный стол", "Стол школьника "],
+  };
+
+  const viewMebel = allMebel[props.counter];
+  const mainArray = mebelObj[viewMebel];
 
   const onClickItemMenu = (i) => {
     setItemMenu(i);
@@ -20,7 +25,7 @@ function MebelLink(counter) {
     <div className="filter__popUp">
       <div className="popup__list flex">
         <div onClick={() => setOpen(!open)} className="popup__list--wrap">
-          <p className="flex">{cushionedFurniture[counter]}</p>
+          <p className="flex">{mainArray[itemMenu]}</p>
           <img
             src={arrow}
             className={open ? "transImg" : ""}
@@ -29,8 +34,8 @@ function MebelLink(counter) {
         </div>
 
         <ul className={open ? "open" : ""}>
-          {cushionedFurniture.map((item, i) =>
-            cushionedFurniture[itemMenu] === item ? (
+          {mainArray.map((item, i) =>
+            mainArray[itemMenu] === item ? (
               ""
             ) : (
               <li className="flex" key={i} onClick={() => onClickItemMenu(i)}>
