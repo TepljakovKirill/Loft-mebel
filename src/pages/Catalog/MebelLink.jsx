@@ -1,7 +1,7 @@
 import React from "react";
 import arrow from "../../img/openfilter.png";
 
-function MebelLink(props) {
+function MebelLink({ counter }) {
   const [open, setOpen] = React.useState(false);
   const [itemMenu, setItemMenu] = React.useState(0);
 
@@ -13,7 +13,7 @@ function MebelLink(props) {
     table: ["Письменный стол", "Журнальный стол", "Стол школьника "],
   };
 
-  const viewMebel = allMebel[props.counter];
+  const viewMebel = allMebel[counter];
   const mainArray = mebelObj[viewMebel];
 
   const onClickItemMenu = (i) => {

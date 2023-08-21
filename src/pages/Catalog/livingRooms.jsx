@@ -14,12 +14,6 @@ function LivingRooms() {
     "Детская",
   ];
 
-  const listMebel = ["Мягкая мебель", "Шкафы", "Столы"];
-
-  // const cushionedFurniture = ["Диваны", "Детские диваны", "Двуспальные диваны"];
-  // const closet = ["Комод", "Шкаф", "Буфет"];
-  // const table = ["Письменный стол", "Журнальный стол", "Стол школьника "];
-
   const onClickItemMenu = (i) => {
     setItemMenu(i);
     setOpen(false);

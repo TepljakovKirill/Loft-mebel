@@ -1,8 +1,8 @@
 import React from "react";
 import arrow from "../../img/openfilter.png";
-import MebelLink from "./SubmenuMebel";
+import MebelLink from "./MebelLink";
 
-function SubmenuMebel() {
+function ListMebel() {
   const [open, setOpen] = React.useState(false);
   const [itemMenu, setItemMenu] = React.useState(0);
   const listMebel = ["Мягкая мебель", "Шкафы", "Столы"];
@@ -41,4 +41,4 @@ function SubmenuMebel() {
   );
 }
 
-export default SubmenuMebel;
+export default ListMebel;
