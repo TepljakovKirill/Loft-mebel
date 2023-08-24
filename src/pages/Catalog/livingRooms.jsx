@@ -5,6 +5,7 @@ import ListMebel from "./ListMebel";
 function LivingRooms() {
   const [open, setOpen] = React.useState(false);
   const [itemMenu, setItemMenu] = React.useState(0);
+
   const menu = [
     "Гостинные",
     "Спальни",
@@ -17,6 +18,7 @@ function LivingRooms() {
   const onClickItemMenu = (i) => {
     setItemMenu(i);
     setOpen(false);
+    // console.log(i);
   };
 
   return (
