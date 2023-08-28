@@ -1,6 +1,8 @@
 import React from "react";
 import arrow from "../../img/openfilter.png";
 
+import { MebelContext } from "../../App";
+
 function ListMebel() {
   const [open, setOpen] = React.useState(false);
   const [itemMenu, setItemMenu] = React.useState(0);
@@ -8,11 +10,12 @@ function ListMebel() {
   const [openObj, setOpenObj] = React.useState(false);
   const [itemObjMenu, setItemObjMenu] = React.useState(0);
 
-  const listMebel = ["Мягкая мебель", "Шкафы", "Столы"];
+  const listMebel = ["Вся мебель", "Мягкая мебель", "Шкафы", "Столы"];
 
-  const allMebel = ["cushionedFurniture", "closet", "table"];
+  const allMebel = ["all", "cushionedFurniture", "closet", "table"];
 
   const mebelObj = {
+    all: [],
     cushionedFurniture: ["Диваны", "Детские диваны", "Двуспальные диваны"],
     closet: ["Комод", "Шкаф", "Буфет"],
     table: ["Письменный стол", "Журнальный стол", "Стол школьника "],
@@ -24,12 +27,15 @@ function ListMebel() {
   const onClickItemMenu = (i) => {
     setItemMenu(i);
     setOpen(false);
+    setMebelList(i);
   };
 
   const onClickLinkMenu = (i) => {
     setItemObjMenu(i);
     setOpenObj(false);
   };
+
+  const { setMebelList } = React.useContext(MebelContext);
 
   return (
     <div className="filter__popUp">

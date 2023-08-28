@@ -3,15 +3,22 @@ import Card from "../../Components/Card";
 import Skeleton from "../../Components/Bestsellers/Skeleton";
 import LivingRooms from "./livingRooms";
 
+import { MebelContext } from "../../App";
+
 function Catalog() {
   const [items, setItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
+
   const [category, setCategory] = React.useState(0);
+  const { mebelList } = React.useContext(MebelContext);
+  console.log(mebelList);
 
   React.useEffect(() => {
     setIsLoading(true);
     fetch(
-      "https://63c7b376075b3f3a91d11226.mockapi.io/Loft?category=" + category
+      `https://63c7b376075b3f3a91d11226.mockapi.io/Loft?${
+        category > 0 ? `category=${category}` : " "
+      }${mebelList > 0 ? `listMebel=${mebelList}` : " "}`
     )
       .then((res) => {
         return res.json();
@@ -20,7 +27,7 @@ function Catalog() {
         setItems(arr);
         setIsLoading(false);
       });
-  }, [category]);
+  }, [category, mebelList]);
 
   const categoriesNumber = (number) => {
     setCategory(number);

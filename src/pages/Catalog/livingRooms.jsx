@@ -7,6 +7,7 @@ function LivingRooms({ categories }) {
   const [itemMenu, setItemMenu] = React.useState(0);
 
   const menu = [
+    "Все",
     "Гостинные",
     "Спальни",
     "Кухни",

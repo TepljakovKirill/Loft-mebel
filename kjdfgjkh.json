@@ -10,7 +10,8 @@
      "price": "2300",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "2"
+     "category": "3",
+     "listMebel": "3"
     },
     {
      "id": "1",
@@ -23,7 +24,8 @@
      "price": "4690",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "2"
+     "category": "3",
+     "listMebel": "3"
     },
     {
      "id": "2",
@@ -36,7 +38,8 @@
      "price": "28490",
      "oldPrice": "37990",
      "discountPrice": "-25",
-     "category": "0"
+     "category": "1",
+     "listMebel": "1"
     },
     {
      "id": "3",
@@ -49,7 +52,8 @@
      "price": "28490",
      "oldPrice": "28490",
      "discountPrice": false,
-     "category": "0"
+     "category": "1",
+     "listMebel": "1"
     },
     {
      "id": "4",
@@ -62,7 +66,8 @@
      "price": "21900",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "1"
+     "category": "2",
+     "listMebel": "1"
     },
     {
      "id": "5",
@@ -75,7 +80,8 @@
      "price": "18900",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "2"
+     "category": "3",
+     "listMebel": "2"
     },
     {
      "id": "6",
@@ -88,7 +94,8 @@
      "price": "8990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "1"
+     "category": "2",
+     "listMebel": "2"
     },
     {
      "id": "7",
@@ -101,7 +108,8 @@
      "price": "14990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "1"
+     "category": "2",
+     "listMebel": "2"
     },
     {
      "id": "8",
@@ -113,7 +121,8 @@
      "sizeHeight": "190",
      "price": "7290",
      "discountPrice": false,
-     "category": "0"
+     "category": "2",
+     "listMebel": "2"
     },
     {
      "id": "9",
@@ -126,7 +135,8 @@
      "price": "10990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "0"
+     "category": "1",
+     "listMebel": "2"
     },
     {
      "id": "10",
@@ -139,7 +149,8 @@
      "price": "19990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "3"
+     "category": "4",
+     "listMebel": "2"
     },
     {
      "id": "11",
@@ -152,7 +163,8 @@
      "price": "27990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "3"
+     "category": "4",
+     "listMebel": "2"
     },
     {
      "id": "12",
@@ -165,7 +177,8 @@
      "price": "21990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "5"
+     "category": "6",
+     "listMebel": "1"
     },
     {
      "id": "13",
@@ -178,7 +191,8 @@
      "price": "26990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "0"
+     "category": "1",
+     "listMebel": "1"
     },
     {
      "id": "14",
@@ -191,7 +205,8 @@
      "price": "6990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "3"
+     "category": "4",
+     "listMebel": "3"
     },
     {
      "id": "15",
@@ -204,7 +219,8 @@
      "price": "9990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "3"
+     "category": "4",
+     "listMebel": "3"
     },
     {
      "id": "16",
@@ -217,7 +233,8 @@
      "price": "21900",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "1"
+     "category": "2",
+     "listMebel": "1"
     },
     {
      "id": "17",
@@ -230,7 +247,8 @@
      "price": "18900",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "2"
+     "category": "3",
+     "listMebel": "3"
     },
     {
      "id": "18",
@@ -243,7 +261,8 @@
      "price": "8990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "3"
+     "category": "4",
+     "listMebel": "3"
     },
     {
      "id": "19",
@@ -256,7 +275,8 @@
      "price": "14990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "3"
+     "category": "4",
+     "listMebel": "3"
     },
     {
      "id": "20",
@@ -269,7 +289,8 @@
      "price": "7290",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "4"
+     "category": "5",
+     "listMebel": "3"
     },
     {
      "id": "21",
@@ -282,7 +303,8 @@
      "price": "10990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "4"
+     "category": "5",
+     "listMebel": "3"
     },
     {
      "id": "22",
@@ -295,7 +317,8 @@
      "price": "19990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "3"
+     "category": "4",
+     "listMebel": "3"
     },
     {
      "id": "23",
@@ -308,6 +331,7 @@
      "price": "27990",
      "oldPrice": false,
      "discountPrice": false,
-     "category": "3"
+     "category": "4",
+     "listMebel": "3"
     }
    ]
