@@ -7,6 +7,7 @@ function Bestsellers() {
   const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
+    setIsLoading(true);
     fetch("https://63c7b376075b3f3a91d11226.mockapi.io/Loft")
       .then((res) => {
         return res.json();

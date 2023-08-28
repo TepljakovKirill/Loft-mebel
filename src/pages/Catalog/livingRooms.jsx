@@ -2,7 +2,7 @@ import React from "react";
 import arrow from "../../img/openfilter.png";
 import ListMebel from "./ListMebel";
 
-function LivingRooms() {
+function LivingRooms({ categories }) {
   const [open, setOpen] = React.useState(false);
   const [itemMenu, setItemMenu] = React.useState(0);
 
@@ -18,7 +18,7 @@ function LivingRooms() {
   const onClickItemMenu = (i) => {
     setItemMenu(i);
     setOpen(false);
-    // console.log(i);
+    categories(i);
   };
 
   return (
